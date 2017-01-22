@@ -1,0 +1,32 @@
+h1, span, p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+
+.dialogue {
+    display: flex;
+    flex-direction: column;
+}
+
+.userQueryContainer {
+    text-align: right;
+}
+
+.apiResponseContainer {
+    text-align: left;
+}
+
+.dialogueMessage {
+    margin: 6px;
+    padding: 6px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.userQuery {
+    background-color: deepskyblue;
+}
+
+.apiResponse {
+    background-color: silver;
+}
