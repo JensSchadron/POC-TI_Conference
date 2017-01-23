@@ -14,7 +14,7 @@ body{
 .dialogPanel{
     background: white;
     width: 500px;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0 auto;
     border: 1px solid #a4a4a4;
     border-top: none;
@@ -45,7 +45,7 @@ h2{
 
 .userQueryContainer {
     margin: 0.5rem 1rem;
-    text-align: left;
+    text-align: right;
 }
 
 .userQueryContainer::after{
@@ -55,15 +55,15 @@ h2{
     display: block;
     position: relative;
     top: 0;
-    left: 10px;
-    border-left: 0px solid transparent;
-    border-right: 14px solid transparent;
+    left: 440px;
+    border-left: 14px solid transparent;
+    border-right: 0px solid transparent;
     border-top: 10px solid deepskyblue;
 }
 
 .apiResponseContainer {
     margin: 0.5rem 1rem;
-    text-align: right;
+    text-align: left;
 }
 
 .apiResponseContainer::after{
@@ -73,9 +73,9 @@ h2{
     display: block;
     position: relative;
     top: 0;
-    left: 440px;
-    border-left: 14px solid transparent;
-    border-right: 0px solid transparent;
+    left: 10px;
+    border-left: 0px solid transparent;
+    border-right: 14px solid transparent;
     border-top: 10px solid orangered;
 }
 
