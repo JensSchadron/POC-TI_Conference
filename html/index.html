@@ -12,22 +12,25 @@
     <title>Bots - TI Conference</title>
 </head>
 <body>
-<span><b>Server:</b></span><br/>
-<span id="server"></span><br/>
-<span><b>Session token:</b></span><br/>
-<span id="token"></span><br/>
-<br/>
-<span><b>Chat history</b></span>
-<div id="dialogue">
-    <!--<div class="userQueryContainer">-->
-    <!--<p class="dialogueMessage userQuery">Ik wil een hotel boeken in één van de allermooiste steden van Europa.</p>-->
-    <!--</div>-->
-    <!--<div class="apiResponseContainer">-->
-    <!--<p class="dialogueMessage apiResponse">Waar wil je naar toe?</p>-->
-    <!--</div>-->
+<div class="info">
+    <span><b>Server:</b></span><br/>
+    <span id="server"></span><br/>
+    <span><b>Session token:</b></span><br/>
+    <span id="token"></span><br/>
 </div>
-
+<div class="dialogPanel">
+    <h1>Conversational User Interface</h1>
+    <h2>TI Conference</h2>
+    <div id="dialogue">
+        <!--<div class="userQueryContainer">-->
+        <!--<p class="dialogueMessage userQuery">Ik wil een hotel boeken in één van de allermooiste steden van Europa.</p>-->
+        <!--</div>-->
+        <!--<div class="apiResponseContainer">-->
+        <!--<p class="dialogueMessage apiResponse">Waar wil je naar toe?</p>-->
+        <!--</div>-->
+    </div>
 <input id="userQuery" type="text" placeholder="eg. Ik wil een hotel boeken." size="40"
        onkeydown="if (event.keyCode == 13) { app.sendJson(); return false; }">
+</div>
 </body>
 </html>

@@ -1,24 +1,88 @@
-h1, span, p {
+body{
     font-family: "Open Sans", sans-serif;
     font-style: normal;
+    background: #d4d4d4;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.dialogue {
+.info{
+    display: none;
+}
+
+.dialogPanel{
+    background: white;
+    width: 500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 1px solid #a4a4a4;
+    border-top: none;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    padding: 1rem 0 0.3rem 0;
+    font-size: 1.3rem;
+}
+h2{
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 1rem;
+    color: #636363;
+}
+
+#dialogue {
+    min-height: 80%;
     display: flex;
     flex-direction: column;
 }
 
 .userQueryContainer {
-    text-align: right;
-}
-
-.apiResponseContainer {
+    margin: 0.5rem 1rem;
     text-align: left;
 }
 
+.userQueryContainer::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 10px;
+    border-left: 0px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 10px solid deepskyblue;
+}
+
+.apiResponseContainer {
+    margin: 0.5rem 1rem;
+    text-align: right;
+}
+
+.apiResponseContainer::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 440px;
+    border-left: 14px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 10px solid orangered;
+}
+
 .dialogueMessage {
-    margin: 6px;
-    padding: 6px;
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
     display: inline-block;
     border-radius: 10px;
 }
@@ -28,5 +92,16 @@ h1, span, p {
 }
 
 .apiResponse {
-    background-color: silver;
+    background-color: orangered;
+}
+
+input{
+    box-sizing:border-box;
+    padding: 1rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
 }
