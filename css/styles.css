@@ -14,10 +14,17 @@ body{
 .dialogPanel{
     background: white;
     width: 500px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     border: 1px solid #a4a4a4;
     border-top: none;
+}
+
+.dialogHeader{
+    position: fixed;
+    width: 500px;
+    z-index: 1;
+    background: white;
 }
 
 h1, h2{
@@ -38,7 +45,8 @@ h2{
 }
 
 #dialogue {
-    min-height: 80%;
+    padding-top: 20%;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
 }
