@@ -18,7 +18,7 @@
     <span><b>Session token:</b></span><br/>
     <span id="token"></span><br/>
 </div>
-<div class="dialogPanel">
+<main>
     <div class="dialogHeader">
     <h1>Conversational User Interface</h1>
     <h2>TI Conference</h2>
@@ -30,9 +30,13 @@
         <!--<div class="apiResponseContainer">-->
         <!--<p class="dialogueMessage apiResponse">Waar wil je naar toe?</p>-->
         <!--</div>-->
+        <div class="apiResponseContainer">
+        <p class="dialogueMessage apiResponse">Waarmee kan ik je helpen?</p>
+        </div>
+
     </div>
 <input id="userQuery" type="text" placeholder="eg. Ik wil een hotel boeken." size="40"
        onkeydown="if (event.keyCode == 13) { app.sendJson(); return false; }">
-</div>
+</main>
 </body>
 </html>

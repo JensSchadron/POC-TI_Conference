@@ -1,4 +1,4 @@
-body{
+html, body{
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     background: #d4d4d4;
@@ -11,7 +11,7 @@ body{
     display: none;
 }
 
-.dialogPanel{
+main{
     background: white;
     width: 500px;
     min-height: 100vh;
@@ -20,6 +20,7 @@ body{
     border-top: none;
 }
 
+/* Header */
 .dialogHeader{
     position: fixed;
     width: 500px;
@@ -44,6 +45,7 @@ h2{
     color: #636363;
 }
 
+/* dialog area */
 #dialogue {
     padding-top: 20%;
     min-height: 80vh;
@@ -51,6 +53,7 @@ h2{
     flex-direction: column;
 }
 
+/* userMessage container */
 .userQueryContainer {
     margin: 0.5rem 1rem;
     text-align: right;
@@ -69,6 +72,7 @@ h2{
     border-top: 10px solid deepskyblue;
 }
 
+/* botMessage container */
 .apiResponseContainer {
     margin: 0.5rem 1rem;
     text-align: left;
@@ -87,6 +91,7 @@ h2{
     border-top: 10px solid orangered;
 }
 
+/* Message */
 .dialogueMessage {
     color: white;
     margin: 0;
@@ -95,14 +100,17 @@ h2{
     border-radius: 10px;
 }
 
+/* userMessage */
 .userQuery {
     background-color: deepskyblue;
 }
 
+/* botMessage */
 .apiResponse {
     background-color: orangered;
 }
 
+/* text input */
 input{
     box-sizing:border-box;
     padding: 1rem;

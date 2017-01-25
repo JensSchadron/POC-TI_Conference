@@ -1,6 +1,3 @@
-/**
- * Created by jenss on 22/01/2017.
- */
 var app, userInput, dialogue, response;
 var SERVER_PROTO, SERVER_DOMAIN, SERVER_PORT, ACCESS_TOKEN, SERVER_VERSION;
 
@@ -31,10 +28,13 @@ function App() {
                 "query": query,
                 "timezone": "GMT+1",
                 "lang": "nl",
+
                 "sessionId": sessionId
             };
+        userInput.val(''); //Userinput terug leegmaken
         console.log('sendJson', queryJson);
         apiAi.sendJson(queryJson);
+
     };
 
     this.open = function () {
