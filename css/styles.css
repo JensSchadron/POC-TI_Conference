@@ -1,4 +1,4 @@
-html, body{
+html, body {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     background: #d4d4d4;
@@ -7,11 +7,11 @@ html, body{
     margin: 0;
 }
 
-.info{
+.info {
     display: none;
 }
 
-main{
+main {
     background: white;
     width: 500px;
     min-height: 100vh;
@@ -21,30 +21,31 @@ main{
     margin-bottom: -50px;
 }
 
-main::after{
-    content:"";
+main::after {
+    content: "";
     display: block;
     height: 50px;
 }
 
 /* Header */
-.dialogHeader{
+.dialogHeader {
     position: fixed;
     width: 500px;
     z-index: 1;
     background: white;
 }
 
-h1, h2{
+h1, h2 {
     text-align: center;
 }
 
-h1{
+h1 {
     margin: 0;
     padding: 1rem 0 0.3rem 0;
     font-size: 1.3rem;
 }
-h2{
+
+h2 {
     margin: 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid #d4d4d4;
@@ -60,44 +61,6 @@ h2{
     flex-direction: column;
 }
 
-/* userMessage container */
-.userQueryContainer {
-    margin: 0.5rem 1rem;
-    text-align: right;
-}
-
-.userQueryContainer::after{
-    content: " ";
-    width: 0;
-    height: 0;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 440px;
-    border-left: 14px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 10px solid deepskyblue;
-}
-
-/* botMessage container */
-.apiResponseContainer {
-    margin: 0.5rem 1rem;
-    text-align: left;
-}
-
-.apiResponseContainer::after{
-    content: " ";
-    width: 0;
-    height: 0;
-    display: block;
-    position: relative;
-    top: 0;
-    left: 10px;
-    border-left: 0px solid transparent;
-    border-right: 14px solid transparent;
-    border-top: 10px solid orangered;
-}
-
 /* Message */
 .dialogueMessage {
     color: white;
@@ -110,28 +73,122 @@ h2{
 /* userMessage */
 .userQuery {
     background-color: deepskyblue;
+
+    animation-name: userAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.userQueryContainer {
+    margin: 0.5rem 1rem;
+    text-align: right;
+}
+
+.userQueryContainer::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 440px;
+    border-left: 14px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 10px solid deepskyblue;
+
+    animation-name: userTriangleAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes userAnimate {
+    from {
+        background-color: white;
+        margin-top: 10px;
+    }
+    to {
+        background-color: deepskyblue;
+        margin-top: 0;
+    }
+}
+
+@keyframes userTriangleAnimate{
+    from {
+        border-top: 10px solid white;
+    }
+    to {
+        border-top: 10px solid deepskyblue;
+    }
 }
 
 /* botMessage */
 .apiResponse {
     background-color: orangered;
+
+    animation-name: botAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.apiResponseContainer {
+    margin: 0.5rem 1rem;
+    text-align: left;
+
+}
+
+.apiResponseContainer::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 10px;
+    border-left: 0px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 10px solid orangered;
+
+    animation-name: botTriangleAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes botAnimate {
+    from {
+        background-color: white;
+        margin-top: 10px;
+    }
+    to {
+        background-color: orangered;
+        margin-top: 0;
+    }
+}
+
+@keyframes botTriangleAnimate{
+    from {
+        border-top: 10px solid white;
+    }
+    to {
+        border-top: 10px solid orangered;
+    }
 }
 
 /* text input */
-.inputField{
+.inputField {
     width: 500px;
     margin: 0 auto;
     border: 1px solid #a4a4a4;
     height: 50px;
 }
-input{
-    box-sizing:border-box;
+
+input {
+    box-sizing: border-box;
     padding: 1rem;
     font-size: 1.1rem;
     width: 100%;
     height: 100%;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
