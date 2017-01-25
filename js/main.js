@@ -99,6 +99,7 @@ function App() {
 
             apiResponseContainer.appendChild(apiResponse);
             dialogue.append(apiResponseContainer);
+            $("html, body").animate({ scrollTop: $(document).height() }, "slow");
         };
 
         apiAi.onError = function (code, data) {
