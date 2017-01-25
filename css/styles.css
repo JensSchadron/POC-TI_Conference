@@ -18,6 +18,13 @@ main{
     margin: 0 auto;
     border: 1px solid #a4a4a4;
     border-top: none;
+    margin-bottom: -50px;
+}
+
+main::after{
+    content:"";
+    display: block;
+    height: 50px;
 }
 
 /* Header */
@@ -111,11 +118,18 @@ h2{
 }
 
 /* text input */
+.inputField{
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #a4a4a4;
+    height: 50px;
+}
 input{
     box-sizing:border-box;
     padding: 1rem;
     font-size: 1.1rem;
     width: 100%;
+    height: 100%;
 }
 
 input:focus{
