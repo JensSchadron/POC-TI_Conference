@@ -22,7 +22,7 @@ window.onload = function () {
 };
 
 function App() {
-    var apiAi, apiAiTts;
+    var apiAi;
     var sessionId = ApiAi.generateRandomId();
 
     this.sendJson = function () {
@@ -180,3 +180,7 @@ function SpeechSetup() {
         };
     }
 }
+
+var hotels = TAFFY([
+
+]);
