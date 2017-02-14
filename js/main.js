@@ -45,7 +45,7 @@ function App() {
 
                 "sessionId": sessionId
             };
-        userInput.val(''); //Userinput terug leegmaken
+        userInput.val('');
         console.log('sendJson', queryJson);
         apiAi.sendJson(queryJson);
     };
