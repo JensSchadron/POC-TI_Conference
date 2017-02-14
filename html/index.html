@@ -21,25 +21,15 @@
 </div>
 <main>
     <div class="dialogHeader">
-    <h1>Conversational User Interface</h1>
-    <h2>TI Conference</h2>
+        <h1>Conversational User Interface</h1>
+        <h2>TI Conference</h2>
     </div>
-    <div id="dialogue">
-        <!--<div class="userQueryContainer">-->
-        <!--<p class="dialogueMessage userQuery">Ik wil een hotel boeken in één van de allermooiste steden van Europa.</p>-->
-        <!--</div>-->
-        <!--<div class="apiResponseContainer">-->
-        <!--<p class="dialogueMessage apiResponse">Waar wil je naar toe?</p>-->
-        <!--</div>-->
-        <!--<div class="apiResponseContainer">-->
-        <!--<p class="dialogueMessage apiResponse">How can I be of any help?</p>-->
-        <!--</div>-->
-
-    </div>
+    <div id="dialogue"></div>
 </main>
 <div class="inputField">
-<input id="userQuery" type="text" placeholder="eg. I want to book a hotel." size="40"
-       onkeydown="if (event.keyCode == 13) { app.sendJson(); return false; }">
+    <input id="userQuery" type="text" placeholder="eg. I want to book a hotel." size="10"
+           onkeydown="if (event.keyCode == 13) { app.sendJson(); return false; }">
+    <img id="micEnabled" src="../assets/mic-animate.gif">
 </div>
 </body>
 </html>
