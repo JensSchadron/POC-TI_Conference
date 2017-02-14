@@ -95,12 +95,15 @@ function App() {
             var status = data.status, code = status.code;
 
             addQueryNode(data.result.resolvedQuery);
-            addResponseNode((data.result.fulfillment) ? data.result.fulfillment.speech : data.result.speech, true);
 
-            var actionComplete = !data.result.actionIncomplete;
-            if (actionComplete) {
-                processResponseQuery(data);
-            }
+            setTimeout(function () {
+                addResponseNode((data.result.fulfillment) ? data.result.fulfillment.speech : data.result.speech, true);
+
+                var actionComplete = !data.result.actionIncomplete;
+                if (actionComplete) {
+                    processResponseQuery(data);
+                }
+            }, responseDelay);
         };
 
         apiAi.onError = function (code, data) {
@@ -124,6 +127,8 @@ function addQueryNode(text) {
     userQueryContainer.appendChild(userQuery);
     dialogue.append(userQueryContainer);
 }
+
+var responseDelay = 1000;
 
 function addResponseNode(text, speak) {
     var apiResponseContainer = document.createElement("div"),
@@ -191,7 +196,9 @@ function SpeechSetup() {
             if (needToBookHotel()) {
                 console.log(query.get());
                 var hotel = query.get()[selectedHotel];
-                addResponseNode("Ok, I'll try to book a room in the " + hotel.name + " in " + hotel.city, true)
+                setTimeout(function () {
+                    addResponseNode("Ok, I'll try to book a room in the " + hotel.name + " in " + hotel.city, true)
+                }, responseDelay);
             } else {
                 app.sendJson();
             }
