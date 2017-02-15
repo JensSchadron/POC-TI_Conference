@@ -233,9 +233,10 @@ var hotels = TAFFY([
         "name": "Premier Inn",
         "classification": 4,
         "price": 123,
-        "wifi": "false",
-        "maxGuests": 4,
-        "pool": "false",
+        "number_of_guests": 4,
+        "wifi": true,
+        "pool": false,
+        "pet friendly": true,
         "rating": 9
     },
     {
@@ -244,9 +245,10 @@ var hotels = TAFFY([
         "name": "Apex Temple court",
         "classification": 3,
         "price": 80,
-        "wifi": "false",
-        "maxGuests": 4,
-        "pool": "false",
+        "number_of_guests": 4,
+        "wifi": false,
+        "pool": false,
+        "pet friendly": false,
         "rating": 3
     },
     {
@@ -255,9 +257,10 @@ var hotels = TAFFY([
         "name": "Ibis Whitechapel",
         "classification": 2,
         "price": 50,
-        "wifi": "false",
-        "maxGuests": 4,
-        "pool": "false",
+        "wifi": false,
+        "number_of_guests": 4,
+        "pool": false,
+        "pet friendly": false,
         "rating": 6
     },
     {
@@ -266,9 +269,10 @@ var hotels = TAFFY([
         "name": "NH London Kensington",
         "classification": 1,
         "price": 25,
-        "wifi": "false",
-        "maxGuests": 2,
-        "pool": "false",
+        "wifi": false,
+        "number_of_guests": 2,
+        "pool": false,
+        "pet friendly": true,
         "rating": 8
     },
     {
@@ -277,9 +281,10 @@ var hotels = TAFFY([
         "name": "The tower",
         "classification": 5,
         "price": 280,
-        "wifi": "false",
-        "maxGuests": 2,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 2,
+        "pool": true,
+        "pet friendly": false,
         "rating": 6
     },
     {
@@ -288,9 +293,10 @@ var hotels = TAFFY([
         "name": "The golden tullip",
         "classification": 4,
         "price": 142,
-        "wifi": "false",
-        "maxGuests": 8,
-        "pool": "false",
+        "wifi": false,
+        "number_of_guests": 8,
+        "pool": true,
+        "pet friendly": false,
         "rating": 9
     },
     {
@@ -299,9 +305,10 @@ var hotels = TAFFY([
         "name": "London city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "false",
-        "maxGuests": 8,
-        "pool": "false",
+        "wifi": false,
+        "number_of_guests": 8,
+        "pool": false,
+        "pet friendly": false,
         "rating": 3
     },
     {
@@ -310,9 +317,10 @@ var hotels = TAFFY([
         "name": "Casa di mama",
         "classification": 4,
         "price": 44,
-        "wifi": "false",
-        "maxGuests": 5,
-        "pool": "true",
+        "wifi": false,
+        "number_of_guests": 5,
+        "pool": true,
+        "pet friendly": false,
         "rating": 5
     },
     {
@@ -321,9 +329,10 @@ var hotels = TAFFY([
         "name": "La vita e bella",
         "classification": 3,
         "price": 88,
-        "wifi": "false",
-        "maxGuests": 5,
-        "pool": "true",
+        "wifi": false,
+        "number_of_guests": 5,
+        "pool": true,
+        "pet friendly": true,
         "rating": 5
     },
     {
@@ -332,9 +341,10 @@ var hotels = TAFFY([
         "name": "Ibis Rome",
         "classification": 2,
         "price": 77,
-        "wifi": "false",
-        "maxGuests": 2,
-        "pool": "true",
+        "wifi": false,
+        "number_of_guests": 2,
+        "pool": true,
+        "pet friendly": true,
         "rating": 9
     },
     {
@@ -343,9 +353,10 @@ var hotels = TAFFY([
         "name": "H10 Rome",
         "classification": 1,
         "price": 12,
-        "wifi": "false",
-        "maxGuests": 2,
-        "pool": "true",
+        "wifi": false,
+        "number_of_guests": 2,
+        "pool": true,
+        "pet friendly": false,
         "rating": 9
     },
     {
@@ -354,9 +365,10 @@ var hotels = TAFFY([
         "name": "Rome palace",
         "classification": 5,
         "price": 300,
-        "wifi": "false",
-        "maxGuests": 5,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 5,
+        "pool": true,
+        "pet friendly": true,
         "rating": 8
     },
     {
@@ -365,9 +377,10 @@ var hotels = TAFFY([
         "name": "The golden tullip",
         "classification": 4,
         "price": 142,
-        "wifi": "false",
-        "maxGuests": 7,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 7,
+        "pool": true,
+        "pet friendly": false,
         "rating": 7
     },
     {
@@ -376,9 +389,10 @@ var hotels = TAFFY([
         "name": "Barcelona city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "true",
-        "maxGuests": 7,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 7,
+        "pool": true,
+        "pet friendly": false,
         "rating": 5
     },
     {
@@ -387,9 +401,10 @@ var hotels = TAFFY([
         "name": "Barcelona palace",
         "classification": 5,
         "price": 280,
-        "wifi": "true",
-        "maxGuests": 5,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 5,
+        "pool": true,
+        "pet friendly": false,
         "rating": 8
     },
     {
@@ -398,9 +413,10 @@ var hotels = TAFFY([
         "name": "The golden tullip",
         "classification": 4,
         "price": 118,
-        "wifi": "true",
-        "maxGuests": 4,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 4,
+        "pool": true,
+        "pet friendly": false,
         "rating": 10
     },
     {
@@ -409,9 +425,10 @@ var hotels = TAFFY([
         "name": "Madrid city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "true",
-        "maxGuests": 4,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 4,
+        "pool": true,
+        "pet friendly": true,
         "rating": 8
     },
     {
@@ -420,9 +437,10 @@ var hotels = TAFFY([
         "name": "Madrid palace",
         "classification": 5,
         "price": 400,
-        "wifi": "true",
-        "maxGuests": 4,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 4,
+        "pool": true,
+        "pet friendly": false,
         "rating": 6
     },
     {
@@ -431,9 +449,10 @@ var hotels = TAFFY([
         "name": "The golden tullip",
         "classification": 4,
         "price": 86,
-        "wifi": "true",
-        "maxGuests": 4,
-        "pool": "true",
+        "wifi": true,
+        "number_of_guests": 4,
+        "pool": true,
+        "pet friendly": true,
         "rating": 9
     },
     {
@@ -442,9 +461,10 @@ var hotels = TAFFY([
         "name": "Madrid city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "true",
-        "maxGuests": 8,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 8,
+        "pool": false,
+        "pet friendly": true,
         "rating": 6
     },
     {
@@ -453,9 +473,10 @@ var hotels = TAFFY([
         "name": "The golden tullip",
         "classification": 4,
         "price": 189,
-        "wifi": "true",
-        "maxGuests": 8,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 8,
+        "pool": false,
+        "pet friendly": false,
         "rating": 5
     },
     {
@@ -464,9 +485,10 @@ var hotels = TAFFY([
         "name": "Brussels city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "true",
-        "maxGuests": 5,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 5,
+        "pool": false,
+        "pet friendly": false,
         "rating": 5
     },
     {
@@ -475,9 +497,10 @@ var hotels = TAFFY([
         "name": "Hilton Antwerp",
         "classification": 4,
         "price": 121,
-        "wifi": "true",
-        "maxGuests": 5,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 5,
+        "pool": false,
+        "pet friendly": false,
         "rating": 8
     },
     {
@@ -486,9 +509,10 @@ var hotels = TAFFY([
         "name": "Antwerp city hotel",
         "classification": 3,
         "price": 99,
-        "wifi": "true",
-        "maxGuests": 3,
-        "pool": "false",
+        "wifi": true,
+        "number_of_guests": 3,
+        "pool": false,
+        "pet friendly": true,
         "rating": 6
     }
 ]);
@@ -502,20 +526,39 @@ function processResponseQuery(data) {
 
     query = hotels({city: queryInfoObject.destination});
 
+
+    var hotelString = '';
+    if (queryInfoObject.faciliteiten !== undefined) {
+        if  ($.isArray(queryInfoObject.faciliteiten) && queryInfoObject.faciliteiten.length > 0) {
+            for (var i = 0; i < queryInfoObject.faciliteiten.length; i++) {
+                var filterObject = {};
+                filterObject[queryInfoObject.faciliteiten[i]] = {};
+                filterObject[queryInfoObject.faciliteiten[i]]["==="] = true;
+                query = query.filter(filterObject);
+            }
+        } else {
+            var filterObject = {};
+            filterObject[queryInfoObject.faciliteiten] = {};
+            filterObject[queryInfoObject.faciliteiten]["==="] = true;
+            query = query.filter(filterObject);
+        }
+
+    }
+
     if (query.count() > 0) {
-        var hotelString = '';
         if (queryInfoObject.sort !== undefined && queryInfoObject.sort.length > 0) {
             query = query.order(queryInfoObject.sort[0]);
         }
-        var i = 1;
+
+        var hotelNumber = 1;
         query.limit(9).each(function (hotel) {
             console.log(hotel);
-            hotelString += i++ + ") " + hotel.name + " in " + hotel.city + " which costs " + hotel.price + "<br>";
+            hotelString += hotelNumber++ + ") " + hotel.name + " in " + hotel.city + " which costs " + hotel.price + "<br>";
         });
 
-        addResponseNode(hotelString, false);
+        setTimeout(addResponseNode, responseDelay, hotelString, false);
     } else {
-        addResponseNode(responseStringHasNoAnswers, true);
+        setTimeout(addResponseNode, responseDelay, responseStringHasNoAnswers, true);
     }
 }
 
@@ -524,7 +567,7 @@ var selectedHotel;
 function needToBookHotel() {
     var strNumbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
-    var reg = new RegExp('.*(number) ([1-9]+).*');
+    var reg = new RegExp('.*(number) ([1-9]{1}).*');
     var inputToTest = userInput.val();
     if (reg.test(inputToTest)) {
         userInput.val('');
